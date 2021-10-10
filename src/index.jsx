@@ -4,20 +4,6 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Blogs from "./blogs";
 import Contact from "./contact";
 
-// App() function are the main function of the webpage
-export default function App() {
-  return (
-    // React Router
-    <Router>   
-        <Route exact path="/" component={Index}>
-        </Route>
-        <Route path="/blogs" component={Blogs}>
-        </Route>
-        <Route path="/contact" component={Contact}>        
-        </Route>
-    </Router>
-  );
-}
 
 class Index extends Component{
     render(){
@@ -40,6 +26,20 @@ class Index extends Component{
     }
 }
 
+// App() function are the main function of the webpage
+export default function App() {
+  return (
+    // React Router
+    <Router>   
+        <Route exact path="/" component={Index}>
+        </Route>
+        <Route path="/blogs" component={Blogs}>
+        </Route>
+        <Route path="/contact" component={Contact}>        
+        </Route>
+    </Router>
+  );
+}
 
 // the most outter layer Dom render, render the App() function to index.html
 ReactDOM.render(<App />, document.getElementById("root"));
