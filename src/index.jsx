@@ -35,7 +35,7 @@ export default function App() {
     <Router>   
         <Route exact path="/" component={Index}>
         </Route>
-        <Route path="/blogs" component={Blog}>
+        <Route path="/blog" component={Blog}>
         </Route>
         <Route path="/contact" component={Contact}>        
         </Route>
