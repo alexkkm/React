@@ -16,8 +16,3 @@ class CompoentExample extends Component{
     /* Comment line in JSX */
 }
 export default CompoentExample;
-
-ReactDOM.render(
-    CompoentExample,
-    document.getElementById('root')
-   );
