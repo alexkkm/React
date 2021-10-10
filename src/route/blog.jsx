@@ -1,8 +1,8 @@
 import { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Index from './index'
+import Index from '../index'
 
-class Blogs extends Component {
+class Blog extends Component {
     render(){
       return(
     <div>
@@ -17,4 +17,5 @@ class Blogs extends Component {
     
   }
 }
-  export default Blogs;
+
+export default Blog;

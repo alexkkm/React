@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Index from './index'
+import Index from '../index'
 
 class Contact extends Component {
     render(){
@@ -17,4 +17,5 @@ class Contact extends Component {
     
   }
 }
-  export default Contact;
+
+export default Contact;
