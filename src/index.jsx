@@ -3,12 +3,13 @@ import { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import RoutePage from "./route/routepage";
-
+import JSX from "./features/JSX";
+import ComponentPage from "./features/compoents";
 
 class Index extends Component{
     render(){
         return(
-            <div id="Index">
+            <div id="Index" className="page">
 
                 <div className="route">
                     <div>
@@ -17,7 +18,19 @@ class Index extends Component{
                 </div>
 
                 <h1>Index Page</h1>
-                
+
+                <h2>Finished Features:</h2>
+                <ol>
+                <li>Route</li>
+                </ol>
+
+                <h2>Features that developing:</h2>
+                <ol>
+                <li>State</li>
+                <li><Link to="/JSX">JSX</Link></li>
+                <li><Link to="/ComponentPage">ComponentPage</Link></li>
+                </ol>
+
             </div>
         )
     }
@@ -33,6 +46,10 @@ export default function App() {
         <Route exact path="/" component={Index}>
         </Route>
         <Route path="/RoutePage" component={RoutePage}>        
+        </Route>
+        <Route path="/JSX" component={JSX}>        
+        </Route>
+        <Route path="/ComponentPage" component={ComponentPage}>        
         </Route>
     </Router>
   );
