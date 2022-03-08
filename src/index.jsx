@@ -1,8 +1,8 @@
 import ReactDOM from "react-dom";
 import { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Blog from "./route/blog";
-import Contact from "./route/contact";
+
+import RoutePage from "./route/routepage";
 
 
 class Index extends Component{
@@ -12,10 +12,7 @@ class Index extends Component{
 
                 <div className="route">
                     <div>
-                        <Link to="/blog">Blog Articles</Link>
-                    </div>
-                    <div>
-                        <Link to="/contact">Contact Me</Link>
+                        <Link to="/RoutePage">RoutePage</Link>
                     </div>
                 </div>
 
@@ -35,9 +32,7 @@ export default function App() {
     <Router>   
         <Route exact path="/" component={Index}>
         </Route>
-        <Route path="/blog" component={Blog}>
-        </Route>
-        <Route path="/contact" component={Contact}>        
+        <Route path="/RoutePage" component={RoutePage}>        
         </Route>
     </Router>
   );
