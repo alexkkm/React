@@ -1,12 +1,12 @@
 import ReactDOM from "react-dom";
-import { Component } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import RoutePage from "./route/routepage";
 import JSX from "./features/JSX";
 import ComponentPage from "./features/compoents";
 
-class Index extends Component{
+class Index extends React.Component{
     render(){
         return(
             <div id="Index" className="page">

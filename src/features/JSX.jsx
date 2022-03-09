@@ -1,8 +1,8 @@
-import { Component } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Index from '../index'
 
-class JSX extends Component {
+class JSX extends React.Component {
     render(){
         return(
         <div id="JSX" className="page">
@@ -23,7 +23,7 @@ class JSX extends Component {
 
 export default JSX;
 
-class ContentOfJSX extends Component {
+class ContentOfJSX extends React.Component {
         render(){
             return(
                 <div>
