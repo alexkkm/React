@@ -15,7 +15,7 @@ class RoutePage extends Component {
             <div>
                 <Link to="/">Index</Link>
             </div>
-            <div style={pagestyle}>
+            <div>
                 <p>Content of Route Page</p>
             </div>
             
@@ -26,7 +26,3 @@ class RoutePage extends Component {
 
 export default RoutePage;
 
-const pagestyle={
-        //backgroundColor: "yellow",
-        border: "2px solid black"
-}

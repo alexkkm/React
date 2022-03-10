@@ -37,19 +37,19 @@ export default function App() {
   return (
     // React Router
     <div>
-        <Container children={<p>App Content</p>}/>
+        <Container children={
         <Router>   
-        <Route exact path="/" component={Index}>
-        </Route>
-        <Route path="/RoutePage" component={RoutePage}>        
-        </Route>
-        <Route path="/JSX" component={JSX}>        
-        </Route>
-        <Route path="/State" component={States}>        
-        </Route>
-    </Router>
+            <Route exact path="/" component={Index}>
+            </Route>
+            <Route path="/RoutePage" component={RoutePage}>        
+            </Route>
+            <Route path="/JSX" component={JSX}>        
+            </Route>
+            <Route path="/State" component={States}>        
+            </Route>
+        </Router>
+        }/>
     </div>
-    
   );
 }
 
