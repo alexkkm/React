@@ -4,18 +4,25 @@ import Index from '../index'
 
 class RoutePage extends Component {
     render(){
-      return(
-    <div>
-        <Router>   
-          <Route exact path="/" component={Index}>
-          </Route>
-        </Router>
+        return(
+            <div id="RoutePage" className="page">
+            
+            <Router>   
+            <Route exact path="/" component={Index}>
+            </Route>
+            </Router>
 
-        <Link to="/">Index</Link>
-        <h1>RoutePage Content</h1>
-    </div>);
-    
+            <div>
+                <Link to="/">Index</Link>
+            </div>
+            <div>
+                <p>Content of Route Page</p>
+            </div>
+            
+        </div>
+        );
   }
 }
 
 export default RoutePage;
+
