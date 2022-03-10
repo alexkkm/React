@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import RoutePage from "./route/routepage";
 import JSX from "./features/JSX";
 import ComponentPage from "./features/compoents";
+import States from "./features/states"
 
 class Index extends Component{
     render(){
@@ -26,7 +27,7 @@ class Index extends Component{
 
                 <h2>Features that developing:</h2>
                 <ol>
-                <li>State</li>
+                <li><Link to="/State">States</Link></li>
                 <li><Link to="/JSX">JSX</Link></li>
                 <li><Link to="/ComponentPage">ComponentPage</Link></li>
                 </ol>
@@ -50,6 +51,8 @@ export default function App() {
         <Route path="/JSX" component={JSX}>        
         </Route>
         <Route path="/ComponentPage" component={ComponentPage}>        
+        </Route>
+        <Route path="/State" component={States}>        
         </Route>
     </Router>
   );
