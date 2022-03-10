@@ -13,7 +13,7 @@ class ComponentPage extends Component {
             </Router>
 
             <div>
-                <Link to="/Index">Index</Link>
+                <Link to="/">Index</Link>
             </div>
             <ContentOfComponentPage />
         </div>

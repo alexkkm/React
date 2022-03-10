@@ -13,7 +13,7 @@ class JSX extends Component {
             </Router>
 
             <div>
-                <Link to="/Index">Index</Link>
+                <Link to="/">Index</Link>
             </div>
             <ContentOfJSX />
         </div>
