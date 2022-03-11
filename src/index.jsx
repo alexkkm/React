@@ -6,6 +6,7 @@ import RoutePage from "./route/routepage";
 import JSX from "./features/JSX";
 import States from "./features/states"
 import Container from "./container"
+import Game from "./projects/tictac/tictac";
 
 class Index extends React.Component{
     render(){
@@ -24,8 +25,9 @@ class Index extends React.Component{
                 <ol>
                     <li><Link to="/State">States</Link></li>
                     <li><Link to="/JSX">JSX</Link></li>
+                    <li><Link to="/tictac">TicTac</Link></li>
                 </ol>
-                <p>Update</p>
+                
             </div>
         )
     }
@@ -46,6 +48,8 @@ export default function App() {
             <Route path="/JSX" component={JSX}>        
             </Route>
             <Route path="/State" component={States}>        
+            </Route>
+            <Route path="/tictac" component={Game}>        
             </Route>
         </Router>
         }/>
