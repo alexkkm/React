@@ -1,5 +1,8 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 import "./tictac.css"
+import Index from '../../index'
 
 function Square(props) {
     return (
@@ -103,7 +106,15 @@ class Board extends React.Component {
       }
   
       return (
-        <div className="game">
+        <div className="page">
+          <Router>
+            <Route exact path="/" component={Index}>
+            </Route>
+          </Router>
+          <Link to="/">Back to Home Page</Link>
+          <p>  </p>
+          
+          <div className="game">
             <div className="game-board">
                 <Board
                 squares={current.squares}
@@ -116,14 +127,12 @@ class Board extends React.Component {
             <div className="game-info">
             <div>{status}</div>
             <ol>{/* TODO: Game History*/}</ol>
+            </div>
           </div>
-        </div>
+      </div>
       );
     }
   }
-  
-
-  
   
 function calculateWinner(squares) {
     const lines = [
