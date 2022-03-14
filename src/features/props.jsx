@@ -25,10 +25,12 @@ export default class PropsPage extends React.Component{
 
 class NotUsingStateToDefineProps extends React.Component{
     render(){
+        var a=this.props.name
         return(
         <div>
             <p>Not Using State:</p>
-            <p>this name is only define when the class is called: {this.props.name}</p>
+            <p>this name is only define when the class is called: {a}</p>
+            <p>or you can directly use this.props.name:{this.props.name}</p>
         </div>
         );
     }

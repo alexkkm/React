@@ -9,6 +9,7 @@ import Container from "./container"
 import Game from "./projects/tictac/tictac";
 import PropsPage from "./features/props";
 import TodoPage from "./projects/todo/todo";
+import Validation from "./features/validation";
 
 class Index extends React.Component{
     render(){
@@ -24,6 +25,7 @@ class Index extends React.Component{
                     <li><Link to="/Props">Props</Link></li>
                     <li><Link to="/State">States</Link></li>
                     <li><Link to="/JSX">JSX</Link></li>
+                    <li><Link to="/Validation">Validation</Link></li>
                 </ol>
 
                 <h2>Items that developing:</h2>
@@ -61,6 +63,8 @@ export default function App() {
             <Route path="/Tictac" component={Game}>        
             </Route>
             <Route path="/Todo" component={TodoPage}>        
+            </Route>
+            <Route path="/Validation" component={Validation}>        
             </Route>
         </Router>
         }/>
