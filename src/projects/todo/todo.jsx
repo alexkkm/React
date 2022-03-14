@@ -1,6 +1,6 @@
 import React from "react";
 
-class Page extends React.Component{
+export default class TodoPage extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
@@ -48,8 +48,6 @@ class List extends React.Component{
       }
 }
 
-class Event extends react.Component{
+class Event extends React.Component{
 
 }
-
-export default Page;

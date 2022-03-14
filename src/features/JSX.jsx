@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Index from '../index'
 
-class JSX extends React.Component {
+export default class JSX extends React.Component {
     render(){
         return(
         <div id="JSX" className="page">
@@ -15,15 +15,13 @@ class JSX extends React.Component {
             <div>
                 <Link to="/">Index</Link>
             </div>
-            <ContentOfJSX />
+            <MenuOfJSX/>
         </div>
         );
   }
 }
 
-export default JSX;
-
-class ContentOfJSX extends React.Component {
+class MenuOfJSX extends React.Component {
         render(){
             return(
                 <div>

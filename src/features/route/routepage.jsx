@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Index from '../index'
+import Index from '../../index'
 
 class RoutePage extends Component {
     render(){

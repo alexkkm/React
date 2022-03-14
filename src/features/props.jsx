@@ -1,18 +1,54 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Index from '../index'
 
-// Functional Component 可以視為 f(d) => UI，根據傳進去的 props 繪出對應的 UI。注意這邊 props 是傳入函式的參數，因此取用 props 不用加 this
-const HelloMessage = (props) => (
-	<div>Hello {props.name}</div>
-);
+export default class PropsPage extends React.Component{
+    render(){
+        // only define props variable: name with value="a" when using the class
+        return(
+        <div className="props-page">
 
-// PropTypes 驗證，若傳入的 props type 不是 string 將會顯示錯誤
-HelloMessage.propTypes = {
-  name: React.PropTypes.string,
+            <div className="route-to-index">
+            <Router>   
+                <Route exact path="/" component={Index}>
+                </Route>
+            </Router>                
+            <Link to="/">Index</Link>
+            </div>
+
+            <NotUsingStateToDefineProps name="a"/>
+            <UsingStateToDefineProps/>
+        </div>
+        );
+    }
 }
 
-// Prop 預設值，若對應 props 沒傳入值將會使用 default 值 Zuck。用法等於 ES5 的 getDefaultProps
-HelloMessage.defaultProps = {
- name: 'Zuck',
+class NotUsingStateToDefineProps extends React.Component{
+    render(){
+        return(
+        <div>
+            <p>Not Using State:</p>
+            <p>this name is only define when the class is called: {this.props.name}</p>
+        </div>
+        );
+    }
 }
 
- export default HelloMessage
+class UsingStateToDefineProps extends React.Component{
+    constructor(props){
+        super(props);
+        this.state={
+            //Define the content of the inital state, which is variables and their default values
+            name: "a"
+        }
+    }
+
+    render(){
+        return(
+            <div>
+                <p>Using State:</p>
+                <p>this name is define under the state of the class: {this.state.name}</p>
+            </div>
+        );
+    }
+}
