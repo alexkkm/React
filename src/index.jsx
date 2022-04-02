@@ -9,7 +9,7 @@ import Container from "./container"
 import Game from "./projects/tictac/tictac";
 import PropsPage from "./features/props";
 import TodoPage from "./projects/todo/todo";
-import NativeState from "./native";
+import NativeState from "./features/native";
 
 
 class Index extends React.Component{
