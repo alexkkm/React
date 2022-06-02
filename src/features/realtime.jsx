@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 // State: collection of content of parameters
-const NativeState = () => {
+const RealTimePage = () => {
     const [time,updateTime]=useState(null);
     useEffect(()=>{ //  after the components was build do the followings
         let time= getCurrentTime();
@@ -44,4 +44,4 @@ const Clock=(props)=>{
 
 
 
-export default NativeState;
+export default RealTimePage;

@@ -9,8 +9,7 @@ import Container from "./container"
 import Game from "./projects/tictac/tictac";
 import PropsPage from "./features/props";
 import TodoPage from "./projects/todo/todo";
-import NativeState from "./features/native";
-
+import RealTimePage from "./features/realtime";
 
 class Index extends React.Component{
     render(){
@@ -26,7 +25,7 @@ class Index extends React.Component{
                     <li><Link to="/Props">Props</Link></li>
                     <li><Link to="/State">States</Link></li>
                     <li><Link to="/JSX">JSX</Link></li>
-                    <li><Link to="/native">Native</Link></li>
+                    <li><Link to="/RealTime">Real Time</Link></li>
                 </ol>
 
                 <h2>Items that developing:</h2>
@@ -37,6 +36,11 @@ class Index extends React.Component{
                 <h2>Projects:</h2>
                 <ol>
                     <li><Link to="/Tictac">TicTac</Link></li>
+                </ol>
+
+                <h2>New Chapter on DCH!</h2>
+                <ol>
+                    To be added afterward.
                 </ol>
             </div>
         )
@@ -65,7 +69,7 @@ export default function App() {
             </Route>
             <Route path="/Todo" component={TodoPage}>        
             </Route>
-            <Route path="/Native" component={NativeState}>        
+            <Route path="/RealTime" component={RealTimePage}>        
             </Route>
         </Router>
         }/>
