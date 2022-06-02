@@ -19,6 +19,11 @@ class Index extends React.Component{
 
                 <h1>Index Page</h1>
 
+                <h2>News:</h2>
+                <ol>
+                    <li>2022/06/02  Merged the request of update of npm_yarn </li>
+                </ol>
+
                 <h2>Finished Features:</h2>
                 <ol>
                     <li><Link to="/RoutePage">Route</Link></li>
