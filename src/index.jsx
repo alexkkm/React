@@ -10,6 +10,7 @@ import Game from "./projects/tictac/tictac";
 import PropsPage from "./features/props";
 import TodoPage from "./projects/todo/todo";
 import RealTimePage from "./features/realtime";
+import newsJSON from "./news.json";
 
 class Index extends React.Component{
     render(){
@@ -21,7 +22,8 @@ class Index extends React.Component{
 
                 <h2>News:</h2>
                 <ol>
-                    <li>2022/06/02  Merged the request of update of npm_yarn </li>
+                    <li>{newsJSON.news1.date}   {newsJSON.news1.content}</li>
+                    <li>{newsJSON.news2.date}   {newsJSON.news2.content}</li>
                 </ol>
 
                 <h2>Finished Features:</h2>

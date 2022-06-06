@@ -1,0 +1,10 @@
+{
+    "news1": {
+        "date": "2022/06/02",
+        "content": "Merged the request of update of npm_yarn"
+    },
+    "news2": {
+        "date": "2022/06/06",
+        "content": "Integrate the news board with JSON fomat"
+    }
+}
