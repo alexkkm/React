@@ -119,7 +119,7 @@ class Index extends React.Component{
                     <div class="projects container">
 
                         <div class="projects-header">
-                            <h1 class="section-title">Recent <span>Projects</span></h1>
+                            <h1 class="section-title">Working <span>Experience</span></h1>
                         </div>
 
 
