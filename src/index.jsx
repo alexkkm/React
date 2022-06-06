@@ -10,7 +10,6 @@ import Game from "./projects/tictac/tictac";
 import PropsPage from "./features/props";
 import TodoPage from "./projects/todo/todo";
 import RealTimePage from "./features/realtime";
-import CssPage from "./css";
 
 //Additional decoration
 import newsJSON from "./news.json";
@@ -226,7 +225,7 @@ class OldIndex extends React.Component{
                 <h2>Items that developing:</h2>
                 <ol>
                     <li><Link to="/Todo">ToDoList</Link></li>
-                    <li><Link to="/Css">CSS</Link></li>
+                    
                 </ol>
                 
                 <h2>Projects:</h2>
@@ -267,8 +266,7 @@ export default function App() {
             </Route>
             <Route path="/RealTime" component={RealTimePage}>        
             </Route>
-            <Route path="/Css" component={CssPage}>        
-            </Route>
+            
         </Router>
         }/>
     </div>
