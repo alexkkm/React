@@ -3,7 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import RoutePage from "./features/route/routepage";
-import JSX from "./features/JSX";
+import JSX from "./features/jsxfile";
 import States from "./features/states"
 import Container from "./container"
 import Game from "./projects/tictac/tictac";
