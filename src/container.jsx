@@ -1,8 +1,8 @@
 import React from "react"
 
 const containerStyle={
-  border: "2px solid black",
-  backgroundColor: 'white'
+  //border: "2px solid black",
+  //backgroundColor: 'white'
 
 }
 
