@@ -2,8 +2,6 @@ import React from "react"
 
 const containerStyle={
   //border: "2px solid black",
-  //backgroundColor: 'white'
-
 }
 
 const Container = ({ children }) => {
