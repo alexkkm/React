@@ -10,7 +10,7 @@ import Game from "./projects/tictac/tictac";
 import PropsPage from "./features/props";
 import TodoPage from "./projects/todo/todo";
 import RealTimePage from "./features/realtime";
-import PersonalPage from "./projects/cv/personal";
+import PersonalPage from "./projects/personal/personal";
 
 //Additional decoration
 import newsJSON from "./news.json";
