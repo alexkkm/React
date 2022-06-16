@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import RoutePage from "./features/route/routepage";
 import JSX from "./features/jsxfile";
 import States from "./features/states"
-import Container from "./container"
 import Game from "./projects/tictac/tictac";
 import PropsPage from "./features/props";
 import TodoPage from "./projects/todo/todo";
@@ -13,6 +12,7 @@ import RealTimePage from "./features/realtime";
 import PersonalPage from "./projects/personal/personal";
 
 //Additional decoration
+import "./index.css";
 import newsJSON from "./news.json";
 
 
@@ -22,15 +22,15 @@ class Index extends React.Component{
         return(
             <div id="Index" className="page">
 
-                <h1>Index Page</h1>
+                <h1 class="glitch" data-text="Index Page">Index Page</h1>
 
-                <h2>News:</h2>
+                <h2 class="glitch" data-text="News:">News:</h2>
                 <ol>
-                    <li>{newsJSON.news1.date}   {newsJSON.news1.content}</li>
-                    <li>{newsJSON.news2.date}   {newsJSON.news2.content}</li>
+                    <li class="glitch" data-text="News:">{newsJSON.news1.date}   {newsJSON.news1.content}</li>
+                    <li class="glitch" data-text="News:">{newsJSON.news2.date}   {newsJSON.news2.content}</li>
                 </ol>
 
-                <h2>Finished Features:</h2>
+                <h2 class="glitch" data-text="Finished Features:">Finished Features:</h2>
                 <ol>
                     <li><Link to="/RoutePage">Route</Link></li>
                     <li><Link to="/Props">Props</Link></li>
@@ -39,19 +39,19 @@ class Index extends React.Component{
                     <li><Link to="/RealTime">Real Time</Link></li>
                 </ol>
 
-                <h2>Items that developing:</h2>
+                <h2 class="glitch" data-text="Items that developing:">Items that developing:</h2>
                 <ol>
                     <li><Link to="/Todo">ToDoList</Link></li>
                     
                 </ol>
                 
-                <h2>Projects:</h2>
+                <h2 class="glitch" data-text="Projects:">Projects:</h2>
                 <ol>
                     <li><Link to="/Tictac">TicTac</Link></li>
                     <li><Link to="/Personal">Personal</Link></li>
                 </ol>
 
-                <h2>New Chapter on DCH!</h2>
+                <h2 class="glitch" data-text="New Chapter on DCH!">New Chapter on DCH!</h2>
                 <ol>
                     To be added afterward.
                 </ol>
@@ -65,8 +65,8 @@ class Index extends React.Component{
 export default function App() {
   return (
     // React Router
-    <div>
-        <Container children={
+    <div id="themeDecorator">
+        <div>
         <Router>   
             <Route exact path="/" component={Index}>
             </Route>
@@ -86,9 +86,8 @@ export default function App() {
             </Route>
             <Route path="/Personal" component={PersonalPage}>        
             </Route>
-            
         </Router>
-        }/>
+        </div>
     </div>
   );
 }
