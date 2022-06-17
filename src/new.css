@@ -1,17 +1,8 @@
-p {
-  padding: 0;
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  color: white;
-  animation: glitch-skew 1s infinite linear alternate-reverse;
-}
 h1 {
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
   }
-
-
   #themeDecorator {
     height: 100%;
     width: 100%;

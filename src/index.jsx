@@ -20,14 +20,14 @@ import newsJSON from "./news.json";
 class Index extends React.Component{
     render(){
         return(
-            <div id="Index" className="page">
+            <div id="themeDecorator">
 
                 <h1 class="glitch" data-text="Index Page">Index Page</h1>
 
                 <h2 class="glitch" data-text="News:">News:</h2>
                 <ol>
-                    <li class="glitch" data-text="News:">{newsJSON.news1.date}   {newsJSON.news1.content}</li>
-                    <li class="glitch" data-text="News:">{newsJSON.news2.date}   {newsJSON.news2.content}</li>
+                    <li class="glitch" data-text={newsJSON.news1.date+newsJSON.news1.content}>{newsJSON.news1.date+newsJSON.news1.content}</li>
+                    <li class="glitch" data-text={newsJSON.news2.date+newsJSON.news2.content}>{newsJSON.news2.date+newsJSON.news2.content}</li>
                 </ol>
 
                 <h2 class="glitch" data-text="Finished Features:">Finished Features:</h2>
@@ -53,7 +53,7 @@ class Index extends React.Component{
 
                 <h2 class="glitch" data-text="New Chapter on DCH!">New Chapter on DCH!</h2>
                 <ol>
-                    To be added afterward.
+                    <p class="glitch" data-text="To be added afterward.">To be added afterward.</p>
                 </ol>
             </div>
         )
@@ -65,7 +65,6 @@ class Index extends React.Component{
 export default function App() {
   return (
     // React Router
-    <div id="themeDecorator">
         <div>
         <Router>   
             <Route exact path="/" component={Index}>
@@ -88,7 +87,6 @@ export default function App() {
             </Route>
         </Router>
         </div>
-    </div>
   );
 }
 
