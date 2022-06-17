@@ -26,8 +26,8 @@ class Index extends React.Component{
 
                 <h2 class="glitch" data-text="News:">News:</h2>
                 <ol>
-                    <li class="glitch" data-text={newsJSON.news1.date+newsJSON.news1.content}>{newsJSON.news1.date+newsJSON.news1.content}</li>
-                    <li class="glitch" data-text={newsJSON.news2.date+newsJSON.news2.content}>{newsJSON.news2.date+newsJSON.news2.content}</li>
+                    <li class="glitch" data-text={newsJSON.news1.date+" "+newsJSON.news1.content}>{newsJSON.news1.date+" "+newsJSON.news1.content}</li>
+                    <li class="glitch" data-text={newsJSON.news2.date+" "+newsJSON.news2.content}>{newsJSON.news2.date+" "+newsJSON.news2.content}</li>
                 </ol>
 
                 <h2 class="glitch" data-text="Finished Features:">Finished Features:</h2>
